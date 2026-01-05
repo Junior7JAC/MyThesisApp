@@ -1,21 +1,31 @@
-<<<<<<< HEAD
-# MyThesisApp
-Uni project
-=======
-# React + Vite
+# MyThesisApp (Frontend Prototype)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend-only prototype for the **MyThesis Platform** (university project).
+Built with **React + Vite**, using **mocked data** and role-based UI.
 
-Currently, two official plugins are available:
+## Roles (mock login)
+- **Student**: `student / student123`
+- **Teacher**: `teacher / teacher123`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Main features (prototype)
+### Student
+- Browse teachers & available thesis topics
+- Filter topics by category (AI, Bioinformatics, Cybersecurity, etc.)
+- View topic slots availability
+- Mock chat UI with teachers
 
-## React Compiler
+### Teacher
+- View own topics (mock “create topic” form)
+- Review applications (pending / accepted)
+- Chat available only for accepted students (mock UI)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
+- React
+- Vite
+- react-router-dom
+- No backend (mock data only)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 0c7b94f (Initial prototype)
+## Run locally
+```bash
+npm install
+npm run dev
