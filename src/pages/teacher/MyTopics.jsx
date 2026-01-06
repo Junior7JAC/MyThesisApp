@@ -11,10 +11,8 @@ export default function MyTopics() {
     <AppShell role="teacher" title="Temele mele">
       <div className="stack">
         <div className="panel">
-          <h2>Propune o temă (mock)</h2>
+          <h2>Propune o temă </h2>
           <div className="muted">
-            Într-un prototype UX, aici ai un formular de propunere temă (atomic components).
-            Pentru proiectul tău poți lăsa doar UI.
           </div>
 
           <div className="formGrid" style={{ marginTop: 12 }}>
@@ -27,7 +25,7 @@ export default function MyTopics() {
               <input className="input" disabled placeholder="AI / Bioinformatică / ..." />
             </label>
             <label className="field">
-              <span className="label">Slots</span>
+              <span className="label">Locuri</span>
               <input className="input" disabled placeholder="e.g. 3" />
             </label>
             <label className="field" style={{ gridColumn: "1 / -1" }}>
@@ -37,7 +35,7 @@ export default function MyTopics() {
 
             <div style={{ gridColumn: "1 / -1", display: "flex", justifyContent: "flex-end", gap: 10 }}>
               <button className="btn ghost" disabled>Reset</button>
-              <button className="btn" disabled>Create topic</button>
+              <button className="btn" disabled>Creare topic</button>
             </div>
           </div>
         </div>
@@ -54,7 +52,7 @@ export default function MyTopics() {
                       <b>{t.title}</b>
                       <div className="muted small">{t.category}</div>
                     </div>
-                    <Badge tone={free > 0 ? "ok" : "warn"}>{free > 0 ? `${free} free` : "full"}</Badge>
+                    <Badge tone={free > 0 ? "ok" : "warn"}>{free > 0 ? `${free} liber` : "full"}</Badge>
                   </div>
                   <div className="muted">{t.description}</div>
                 </div>

@@ -16,7 +16,7 @@ export default function Applications() {
   };
 
   return (
-    <AppShell role="teacher" title="Aplicații">
+    <AppShell role="teacher" title="Aplicări">
       <div className="twoCols">
         <section className="panel">
           <h2>Pending</h2>
@@ -33,7 +33,7 @@ export default function Applications() {
                 <div className="muted">{a.message}</div>
 
                 <div className="rowActions">
-                  {/* Mock buttons (poți lăsa disabled dacă vrei “non-interactive”) */}
+                  {/**/}
                   <button className="btn ghost" disabled>Reject</button>
                   <button className="btn" disabled>Accept</button>
                 </div>

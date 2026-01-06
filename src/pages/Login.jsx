@@ -23,7 +23,7 @@ export default function Login() {
     <div className="authPage">
       <div className="authCard">
         <h1>MyThesis Platform</h1>
-        <p className="muted">Login mock (fără backend)</p>
+        <p className="muted">Login</p>
 
         <form onSubmit={onSubmit} className="stack">
           <Input label="Username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="student / teacher" />

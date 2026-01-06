@@ -34,6 +34,7 @@ export const APPLICATIONS = [
   // aplicații către profesor (mock)
   { id: "app-1", topicId: "top-1", teacherId: "t-1", studentId: "stu-1", studentName: "Andreea Student", status: "pending", message: "Aș dori această temă, am experiență cu React și Qdrant." },
   { id: "app-2", topicId: "top-3", teacherId: "t-2", studentId: "stu-2", studentName: "Mihai Student", status: "accepted", message: "Interesat de securitate + STRIDE." },
+  { id: "app-3", topicId: "top-1", teacherId: "t-1", studentId: "stu-3", studentName: "Ioana Student", status: "accepted", message: "Am lucrat cu embeddings și evaluare (MRR/NDCG)."},
 ];
 
 export const CHATS = {
@@ -46,4 +47,9 @@ export const CHATS = {
     { from: "stu-2", text: "Aș vrea detalii despre cerințe.", at: "2026-01-02 09:10" },
     { from: "t-2", text: "Sigur, începem cu threat model + backlog.", at: "2026-01-02 09:13" },
   ],
+  "t-1:stu-3": [
+  { from: "stu-3", text: "Bună ziua! Sunt ok cu RAG + evaluare.", at: "2026-01-04 10:10" },
+  { from: "t-1", text: "Perfect. Începem cu dataset + baseline.", at: "2026-01-04 10:12" },
+  ],
 };
+

@@ -83,3 +83,18 @@ a{ color:inherit; text-decoration:none; }
 .bubble{ max-width:70%; border:1px solid var(--line); background:#111c33; border-radius:14px; padding:10px 12px; }
 .bubble.mine{ background:#1b2a46; border-color:#2c3d5e; }
 .tiny{ font-size:11px; margin-top:6px; }
+
+.miniList { display:flex; flex-direction:column; gap:10px; }
+.miniRow { display:flex; justify-content:space-between; gap:12px; align-items:center; padding:10px 12px; border:1px solid var(--line); background: var(--panelBg); border-radius:14px; }
+.miniTitle { font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width: 520px; }
+
+.miniTable { margin-top: 6px; }
+.miniHead { display:grid; grid-template-columns: 1.2fr 1.4fr .6fr .6fr; gap: 10px; color: var(--muted); font-size: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.miniLine { display:grid; grid-template-columns: 1.2fr 1.4fr .6fr .6fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(34,48,74,0.55); align-items:center; }
+.miniLine:last-child { border-bottom: none; }
+
+@media (max-width: 760px){
+  .miniHead { display:none; }
+  .miniLine { grid-template-columns: 1fr; gap: 6px; }
+  .miniTitle { max-width: 100%; }
+}

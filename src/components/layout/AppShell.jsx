@@ -9,7 +9,7 @@ const MENU = {
   teacher: [
     { label: "Dashboard", href: "/teacher" },
     { label: "Temele mele", href: "/teacher/topics" },
-    { label: "Aplicații", href: "/teacher/applications" },
+    { label: "Aplicări", href: "/teacher/applications" },
   ],
 };
 

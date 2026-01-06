@@ -61,7 +61,7 @@ export default function TeacherDetails() {
                       View details
                     </button>
                     <button className="btn" disabled>
-                      Apply (mock)
+                      Apply 
                     </button>
                   </div>
                 </div>
