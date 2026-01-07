@@ -2,10 +2,17 @@ import React from "react";
 import AppShell from "../../components/layout/AppShell";
 import { APPLICATIONS, TEACHERS } from "../../data/mockData";
 import Badge from "../../components/atoms/Badge";
+import { useAuth } from "../../app/auth.jsx";
+
 
 export default function Applications() {
-  const pending = APPLICATIONS.filter((a) => a.status === "pending");
-  const accepted = APPLICATIONS.filter((a) => a.status === "accepted");
+  const { user } = useAuth();
+  const teacherId = user?.id; // "t-1"
+
+  const myApps = APPLICATIONS.filter((a) => a.teacherId === teacherId);
+  const pending = myApps.filter((a) => a.status === "pending");
+  const accepted = myApps.filter((a) => a.status === "accepted");
+
 
   const topicTitle = (topicId) => {
     for (const t of TEACHERS) {

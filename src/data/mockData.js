@@ -31,25 +31,67 @@ export const TEACHERS = [
 ];
 
 export const APPLICATIONS = [
-  // aplicații către profesor (mock)
-  { id: "app-1", topicId: "top-1", teacherId: "t-1", studentId: "stu-1", studentName: "Andreea Student", status: "pending", message: "Aș dori această temă, am experiență cu React și Qdrant." },
-  { id: "app-2", topicId: "top-3", teacherId: "t-2", studentId: "stu-2", studentName: "Mihai Student", status: "accepted", message: "Interesat de securitate + STRIDE." },
-  { id: "app-3", topicId: "top-1", teacherId: "t-1", studentId: "stu-3", studentName: "Ioana Student", status: "accepted", message: "Am lucrat cu embeddings și evaluare (MRR/NDCG)."},
+  // t-1 (Popescu): 1 pending + 2 accepted
+  {
+    id: "app-1",
+    topicId: "top-1",
+    teacherId: "t-1",
+    studentId: "stu-1",
+    studentName: "Andreea Student",
+    status: "pending",
+    message: "Aș dori această temă, am experiență cu React și Qdrant.",
+  },
+  {
+    id: "app-3",
+    topicId: "top-1",
+    teacherId: "t-1",
+    studentId: "stu-3",
+    studentName: "Ioana Student",
+    status: "accepted",
+    message: "Am lucrat cu embeddings și evaluare (MRR/NDCG).",
+  },
+  {
+    id: "app-4",
+    topicId: "top-2",
+    teacherId: "t-1",
+    studentId: "stu-4",
+    studentName: "Radu Student",
+    status: "accepted",
+    message: "Am făcut Spark în Colab, pot implementa pipeline + similarity.",
+  },
+
+  // t-2 (Ionescu): accepted (poate rămâne)
+  {
+    id: "app-2",
+    topicId: "top-3",
+    teacherId: "t-2",
+    studentId: "stu-2",
+    studentName: "Mihai Student",
+    status: "accepted",
+    message: "Interesat de securitate + STRIDE.",
+  },
 ];
 
+
 export const CHATS = {
-  // chat student-prof (mock)
   "t-1:stu-1": [
     { from: "stu-1", text: "Bună ziua! Mă interesează tema RAG.", at: "2026-01-03 11:20" },
     { from: "t-1", text: "Salut! Spune-mi ce stack vrei să folosești.", at: "2026-01-03 11:22" },
   ],
+
+  "t-1:stu-3": [
+    { from: "stu-3", text: "Bună! Pot începe cu dataset + baseline.", at: "2026-01-04 10:10" },
+    { from: "t-1", text: "Perfect. Definim metricile și evaluarea.", at: "2026-01-04 10:12" },
+  ],
+
+  "t-1:stu-4": [
+    { from: "stu-4", text: "Salut! Am făcut Spark și similarity cu MinHash.", at: "2026-01-04 16:05" },
+    { from: "t-1", text: "Super. Facem un pipeline cu feature extraction.", at: "2026-01-04 16:07" },
+  ],
+
   "t-2:stu-2": [
     { from: "stu-2", text: "Aș vrea detalii despre cerințe.", at: "2026-01-02 09:10" },
     { from: "t-2", text: "Sigur, începem cu threat model + backlog.", at: "2026-01-02 09:13" },
-  ],
-  "t-1:stu-3": [
-  { from: "stu-3", text: "Bună ziua! Sunt ok cu RAG + evaluare.", at: "2026-01-04 10:10" },
-  { from: "t-1", text: "Perfect. Începem cu dataset + baseline.", at: "2026-01-04 10:12" },
   ],
 };
 
